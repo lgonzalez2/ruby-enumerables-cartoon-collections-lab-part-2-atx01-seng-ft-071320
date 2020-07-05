@@ -1,4 +1,3 @@
-require 'pry'
 
 def square_array(array)
   array.map do |element|
@@ -8,8 +7,7 @@ end
 
 def summon_captain_planet(planeteer_calls)
   planeteer_calls.collect do |element|
-    element << "!"
-    element.capitalize!
+    element.capitalize! + "!"
   end 
 end
 
@@ -20,7 +18,6 @@ def long_planeteer_calls(planeteer_calls)
 end
 
 
-
 def find_valid_calls(planeteer_calls)
   valid_calls = ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
   
@@ -28,4 +25,5 @@ def find_valid_calls(planeteer_calls)
     valid_calls.include?(call) 
   end 
 end
+
 
